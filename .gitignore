@@ -1,0 +1,7 @@
+# Ignorar configuraciones del entorno DataFlex
+IdeSrc/
+
+# Ignorar ejecutables y logs de compilacion
+Programs/*.exe
+Programs/*.dbg
+Programs/*.log
