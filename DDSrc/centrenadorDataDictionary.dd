@@ -19,6 +19,9 @@ Class centrenadorDataDictionary is a DataDictionary
         Set Foreign_Field_Option DD_INDEXFIELD DD_NOPUT to True
         Set Foreign_Field_Option DD_DEFAULT DD_DISPLAYONLY to True
 
+        Set Field_Label_Long Field entrenador.Nombre to "Nombre"
+        Set Field_Label_Short Field entrenador.Nombre to "Nombre"
+
     End_Procedure
 
 End_Class
