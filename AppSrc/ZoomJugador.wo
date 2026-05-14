@@ -88,7 +88,22 @@ Object oZoomJugador is a cWebView
             Procedure OnPrompt
                 Send NavigatePath
             End_Procedure
-        End_Object 
+        End_Object
+        
+        Object oBtnVerPosiciones is a cWebButton
+            Set psCaption to "Consultar Posiciones"
+            Set piColumnSpan to 0
+            Set piColumnIndex to 0
+            
+            // Registramos la ruta hacia la lista de posiciones
+            WebRegisterPath ntNavigateForward oSelectPosicion
+
+            Procedure OnClick
+                // Lanzamos la navegación. 
+                // Al ser un botón independiente, DataFlex la clasificará como nfUndefined
+                Send NavigatePath
+            End_Procedure
+        End_Object
     End_Object 
 
     Object oActionGroup is a cWebMenuGroup
