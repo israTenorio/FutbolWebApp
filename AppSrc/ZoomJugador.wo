@@ -77,6 +77,17 @@ Object oZoomJugador is a cWebView
             Set piColumnIndex to 0
             Set peLabelPosition to lpTop
             Set psLabel to "Nombre Equipo"
+            
+            // 1. Activamos el botón de lupa
+            Set pbPromptButton to True 
+            
+            // 2. Registramos la ruta segura hacia la lista de equipos
+            WebRegisterPath ntNavigateForward oSelectEquipo
+
+            // 3. Programamos la acción de pulsar la lupa
+            Procedure OnPrompt
+                Send NavigatePath
+            End_Procedure
         End_Object 
     End_Object 
 
