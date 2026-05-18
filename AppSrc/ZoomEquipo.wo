@@ -65,6 +65,14 @@ Object oZoomEquipo is a cWebView
             Set piColumnIndex to 0
             Set peLabelPosition to lpTop
             Set psLabel to "Liga"
+            
+            Set pbPromptButton to True
+            
+            WebRegisterPath ntNavigateForward oSelectLiga
+            
+            Procedure OnPrompt
+                Send NavigatePath
+            End_Procedure
         End_Object 
     End_Object 
 
